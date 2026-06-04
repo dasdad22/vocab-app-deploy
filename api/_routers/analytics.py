@@ -2,8 +2,8 @@ from fastapi import APIRouter, Depends, Request
 from sqlalchemy.orm import Session
 from sqlalchemy import func
 from datetime import datetime, timedelta, timezone
-from database import get_db
-from models import PageView, User, StudyLog, Word
+from _database import get_db
+from _models import PageView, User, StudyLog, Word
 
 router = APIRouter(prefix="/api/analytics", tags=["analytics"])
 

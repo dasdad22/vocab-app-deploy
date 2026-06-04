@@ -2,7 +2,7 @@
 import sys, os
 sys.path.insert(0, os.path.dirname(__file__))
 
-from main import app
+from _main import app
 
 # Vercel requires a handler variable pointing to the ASGI app
 handler = app

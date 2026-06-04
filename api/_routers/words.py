@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from typing import Optional, List
-from database import get_db
-from models import Word, User
-from schemas import WordCreate, WordUpdate, WordResponse, BatchWordsCreate
-from auth import get_current_user
+from _database import get_db
+from _models import Word, User
+from _schemas import WordCreate, WordUpdate, WordResponse, BatchWordsCreate
+from _auth import get_current_user
 
 router = APIRouter(prefix="/api/words", tags=["words"])
 
